@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>protofolio</title>
+    <title>protofolio</title>          
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
     <nav>
@@ -22,17 +23,15 @@
                     <a href="#services">service</a>
                 </li>
                 <li>
-                    <a href="#cuntact">contact</a>
+                    <a href="#contact">contact</a>
                 </li>
             </ul>
         </div>
     </nav>
+    <!-- /*  start home section  ##############*/ -->
     <header class="home-header" id="home">
-        <div class="container">
-            <div class="row">
-                <div class="home-img">
-                    <img src="https://picsum.photos/id/29/300/200" />
-                </div>
+        <div class="overlay">
+            <div class="flex-center">
                 <div class="intro">
                     <h2>
                         home section
@@ -42,12 +41,16 @@
                     </p>
                 </div>
             </div>
+         
         </div>
     </header>
+    <!-- /*  end home section  ##############*/ -->
+    <!-- /*  start about section  ##############*/ -->
     <section id="about-us">
         <div class="container">
                  <!-- start skill  -->
         <div class="skils-items">
+            <h2 class="title-section">my skills</h2>
             <div class="skils-item "><!-- /* start skill item*/  -->
                 <span> html</span>
                 <div class="div-progress div-progress-90"></div>
@@ -63,30 +66,56 @@
                 <div class="div-progress div-progress-70"></div>
             </div>
             <div class="skils-item"><!-- /* start skill item*/  -->
-                <span> php</span>
+                <span>bootstrap</span>
                 <div class="div-progress div-progress-60"></div>
             </div>
             <div class="skils-item"><!-- /* start skill item*/  -->
-                <span> bootstrap</span>
+                <span>php</span>
                 <div class="div-progress div-progress-70"></div>
             </div>
             <!-- /* end skill item*/  -->
         </div>
         <!-- /* end skill*/  -->
-        <div class="experience"> 
-            <!-- /* start experience*/ -->
-            
-            
-        </div> 
+        <section>
+            <h2 class="title-section">
+                my experience
+            </h2>
+            <div class="experience"> 
+                <!-- /* start experience*/ -->
+                <span class="line-v"></span>
+                <div class="experiec-item experiec-item-l">
+                    <h3 class="experiec-item-title">ipsum dolor </h3>
+                    <p class="experiec-item-p">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium sunt voluptates animi illum. Quis accusamus expedita sequi incidunt deserunt? Totam libero iure repellat dolore repellendus, rem explicabo veniam veritatis.
+                    </p>
+                </div>
+    
+                <div class="experiec-item experiec-item-r">
+                    <h3 class="experiec-item-title">ipsum dolor </h3>
+                    <p class="experiec-item-p">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium sunt voluptates animi illum. Quis accusamus expedita sequi incidunt deserunt? Totam libero iure repellat dolore repellendus, rem explicabo veniam veritatis.
+                    </p>
+                </div>
+    
+                <div class="experiec-item experiec-item-l">
+                    <h3 class="experiec-item-title">ipsum dolor </h3>
+                    <p class="experiec-item-p">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium sunt voluptates animi illum. Quis accusamus expedita sequi incidunt deserunt? Totam libero iure repellat dolore repellendus, rem explicabo veniam veritatis.
+                    </p>
+                </div>
+            </div> 
+        </section>
         <!-- /* end experience*/ -->
         </div>
     </section>
+        <!-- /*  start about section  ##############*/ -->
     <section id="services">
+        <h2 class="title-section">my Services</h2>
         <div class="container">
             <div class="seveic-itmes row">
-                <div class="services-item">
+                <div class="services-item col-50 col-100">
                     <div class="imge-top">
-                        <img src="https://picsum.photos/id/29/100/100" />
+                        <img src="https://picsum.photos/id/19/100/100" />
                     </div>
                     <div class="services-info">
                         <h3>Lorem ipsum dolor</h3>
@@ -95,9 +124,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="services-item middle-m-x-5">
+                <div class="services-item middle-m-x-5 col-50 col-100">
                     <div class="imge-top">
-                        <img src="https://picsum.photos/id/29/100/100" />
+                        <img src="https://picsum.photos/id/20/100/100" />
                     </div>
                     <div class="services-info">
                         <h3>Lorem ipsum dolor</h3>
@@ -106,9 +135,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="services-item">
+                <div class="services-item col-50 col-100">
                     <div class="imge-top">
-                        <img src="https://picsum.photos/id/29/100/100" />
+                        <img src="https://picsum.photos/id/22/100/100" />
                     </div>
                     <div class="services-info">
                         <h3>Lorem ipsum dolor</h3>
@@ -118,54 +147,58 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>  <!-- end container -->
+       
     </section>
-    <section id="cuntact">
+    <section id="contact">
         <div class="container">
-            <form action="" class="text-center">
-                <div class="box-input row">
-                    <label for="name"> name</label>
-                    <input type="text" id="name" placeholder="enter your name">
+            <h2 class="title-section">contact me</h2>
+            <div class="row box-contact">
+                <form action="" class="text-center contact-form">
+                    <div class="box-input row">
+                        <label for="name"> name</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="box-input row">
+                        <label for="email">email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="box-textarea row flex-nowrob">
+                        <label for="message" class="lable-textarea">message</label>
+                        <textarea name="" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <button class="submet">submet</button>
+                </form>
+                <div class="social-media">
+                    <ul>
+                        <li>
+                            <a href="#" class="flex-center">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex-center">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex-center">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex-center">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="box-input row">
-                    <label for="email">email</label>
-                <input type="email" id="email" placeholder="enter your email">
-                </div>
-                <div class="box-textarea row">
-                    <label for="message" class="lable-textarea"> message</label>
-                    <textarea name="" id="message" cols="30" rows="10"></textarea>
-                </div>
-                <button class="submet">submet</button>
-            </form>
-            <div class="social-media">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
             </div>
-        </div>
+        </div><!-- end container -->
     </section>
 
     <footer>
-        <p>copy right 	&#169; 2022</p>
+        <p>abdullah aljuhi copy right 	&#169; 2022</p>
     </footer>
 </body>
 </html>
