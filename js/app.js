@@ -11,7 +11,8 @@ dark.addEventListener('click',function(e){
     body.classList.toggle('dark');
 });
 let bq =document.querySelector(".home-header");
-let imgs=["../images/home1.jpg","../images/home2.jpg","../images/home3.jpg","../images/home4.jpg"]
+
+let imgs=["../images/home1.jpg","./images/home2.jpg","./images/home3.jpg","./images/home4.jpg"]
 setInterval(function(){
     n=Math.floor(Math.random()*3);
     bq.style.backgroundImage = "url('"+imgs[n]+"')";
