@@ -12,21 +12,54 @@
 <body>
     <nav>
         <div class="container">
-            <ul>
-                <li>
-                    <a href="#home">home</a>
-                </li>
-                <li>
-                    <a href="#about-us">about</a>
-                </li>
-                <li>
-                    <a href="#services">service</a>
-                </li>
-                <li>
-                    <a href="#contact">contact</a>
-                </li>
-            </ul>
+            <!-- <span class="minu">
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-times"></i>
+            </span> -->
+            <span class="darkminu">
+                <i class="fa fa-adjust"></i>
+            </span>
+            <div class="row flex-center">
+                <ul class="minu-link">
+                    <li>
+                        <a href="#home">home</a>
+                    </li>
+                    <li>
+                        <a href="#about-us">about</a>
+                    </li>
+                    <li>
+                        <a href="#services">service</a>
+                    </li>
+                    <li>
+                        <a href="#contact">contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+        <!-- <aside class="a">
+            <div class="link-option">
+                <button>
+                    dark
+                </button>
+                <button>
+                    light
+                </button>
+            </div>
+                <ul class="side-link">
+                    <li>
+                        <a href="#home">home</a>
+                    </li>
+                    <li>
+                        <a href="#about-us">about</a>
+                    </li>
+                    <li>
+                        <a href="#services">service</a>
+                    </li>
+                    <li>
+                        <a href="#contact">contact</a>
+                    </li>
+                </ul>
+        </aside> -->
     </nav>
     <!-- /*  start home section  ##############*/ -->
     <header class="home-header" id="home">
@@ -157,16 +190,19 @@
                 <form action="" class="text-center contact-form">
                     <div class="box-input row">
                         <label for="name"> name</label>
-                        <input type="text" id="name" placeholder="Enter your name">
+                        <input type="text" id="name" placeholder="Enter your name" class="input">
                     </div>
+                    <div class="aler-error valid"> this feild id equired</div>
                     <div class="box-input row">
                         <label for="email">email</label>
-                    <input type="email" id="email" placeholder="Enter your email">
+                    <input type="email" id="email" placeholder="Enter your email" class="input">
                     </div>
+                    <div class="aler-error valid"> this feild id equired</div>
                     <div class="box-textarea row flex-nowrob">
                         <label for="message" class="lable-textarea">message</label>
-                        <textarea name="" id="message" cols="30" rows="10"></textarea>
+                        <textarea name="" id="message" cols="30" rows="10" class="input"></textarea>
                     </div>
+                    <div class="aler-error valid"> this feild id equired</div>
                     <button class="submet">submet</button>
                 </form>
                 <div class="social-media">
@@ -200,5 +236,7 @@
     <footer>
         <p>abdullah aljuhi copy right 	&#169; 2022</p>
     </footer>
+    <script src="./js/app.js"></script>
+    <script src="./js/validatin.js"></script>
 </body>
 </html>

@@ -17,6 +17,9 @@
     .box-contact{
         justify-content: center;
     }
+    aside{
+        width: 50%;
+    }
 }
 
 @media screen and (max-width:900px) {
@@ -50,6 +53,12 @@
 .experiec-item:first-of-type::after{
     display:none !important;
 }
+aside{
+    width: 80%;
+}
+.close-minu{
+    left: 80%;
+}
 }
 @media screen and (max-width:500px) {
     html{
@@ -58,7 +67,8 @@
     .container{
         width: 100%;
     }
-    nav ul li {
+    
+    nav ul.minu-link li {
         display: block;
         text-align: center;
     }
@@ -71,6 +81,9 @@
     {
         left: calc(50% - 148px);
 
+    }
+    .close-minu{
+        left: 80%;
     }
 }
 @media screen and (max-width:300px) {
