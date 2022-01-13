@@ -167,6 +167,10 @@ aside{
     -moz-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
+    -webkit-transform: translate(-100%, -100%);
+    -moz-transform: translate(-100%, -100%);
+    -ms-transform: translate(-100%, -100%);
+    -o-transform: translate(-100%, -100%);
 }
 .asideminu{
     transform: translate(0px, 0px) !important;
